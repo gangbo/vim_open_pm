@@ -2,6 +2,8 @@
 
 use Data::Dumper;
 
+my @DIRS = ( 'lib514', 'lib', '.' );
+
 sub is_valid_char {
     my ($char) = @_;
     return $char =~ /[a-zA-Z:_0-9]/;
@@ -39,14 +41,21 @@ if ( is_valid_char( substr( $line, $pos, 1 ) ) ) {
         print $output;
     }
     else {
-        my $path = $package;
-        $path =~ s|::|/|g;
-        if ( $package =~ /^Mixi::/ ) {
-            $path .= 'lib/'.$path;
+        my $pm_path = $package;
+        $pm_path =~ s|::|/|g;
+        my $not_found = 1;
+        for (@DIRS) {
+            if ( -e "$_/$pm_path.pm" ) {
+                $pm_path   = "$_/$pm_path.pm";
+                $not_found = 0;
+                last;
+            }
         }
-        $path = $path. '.pm';
-        if ( -e $path ) {
-            print $cwd.'/'.$path;
+        if ($not_found) {
+            #warn " O(∩_∩)O~ Not Found '$package' IN @DIRS";
+        }
+        else {
+            print $pm_path;
         }
     }
 }
