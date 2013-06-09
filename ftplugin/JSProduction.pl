@@ -1,4 +1,4 @@
-pckage JavaScriptBeautifier;
+package JavaScriptBeautifier;
 
 use warnings;
 use strict;
