@@ -44,8 +44,10 @@ filetype indent on
 filetype on
 syntax on
 set helplang=cn,en
+
 set wildmenu
 set number
+
 set noswapfile
 set nobackup
 set cursorline
