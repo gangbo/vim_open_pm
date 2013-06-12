@@ -79,5 +79,33 @@ set fencs=utf-8,euc-jp,shift-jis
 "
 
 
-
 " http://www.vivizu.com/vim/Vim-9.html
+
+"Vim configuration file
+"~/.vimrc
+"==============
+"Setings
+"=============
+set history=400
+set noerrorbells
+set novisualbell
+set t_vb= "close visual bell
+set tabstop=4
+set shiftround
+set nowritebackup
+set smartindent
+set autoindent
+set cindent
+set autoread
+set cmdheight=1
+set showtabline=2
+set tabpagemax=20
+set term=xterm
+set textwidth=178
+"===============
+"Mappings
+"===============
+:nmap <C-c><C-c> :!perl -Wc %<CR>
+
+syntax match Trail " +$"
+highlight def link Trail Todo
