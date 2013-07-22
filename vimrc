@@ -15,6 +15,9 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'jistr/vim-nerdtree-tabs.git'
 
+"color scheme
+NeoBundle 'nightire/vim-colors'
+
 "--My Bundles here:
 "--
 "-- Note: You don't set neobundle setting in .gvimrc!
