@@ -17,6 +17,7 @@ NeoBundle 'jistr/vim-nerdtree-tabs.git'
 
 "color scheme
 NeoBundle 'nightire/vim-colors'
+colorscheme grb256
 
 "--My Bundles here:
 "--
