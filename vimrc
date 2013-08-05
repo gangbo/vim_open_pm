@@ -17,7 +17,7 @@ NeoBundle 'jistr/vim-nerdtree-tabs.git'
 
 "color scheme
 NeoBundle 'nightire/vim-colors'
-colorscheme grb256
+colorscheme darkblue
 
 "--My Bundles here:
 "--
@@ -68,6 +68,7 @@ set paste
 
 nmap <F5> :tabp<CR>
 nmap <F6> :tabn<CR>
+nmap <F4> <C-w>w
 set expandtab
 set shiftwidth=4 "自动缩进是使用几个空格
 set smarttab
