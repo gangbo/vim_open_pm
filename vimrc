@@ -23,7 +23,7 @@ colorscheme darkblue
 "--
 "-- Note: You don't set neobundle setting in .gvimrc!
 "-- Original repos on github
-NeoBundle 'gangbo/vim_open_pm'
+"NeoBundle 'gangbo/vim_open_pm'
 "-- vim-scripts repos
 NeoBundle 'L9'
 NeoBundle 'vim-startify'
