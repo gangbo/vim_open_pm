@@ -107,7 +107,7 @@ set autoread
 set cmdheight=1
 set showtabline=2
 set tabpagemax=20
-set term=xterm
+"set term=xterm
 set textwidth=178
 "===============
 "Mappings
