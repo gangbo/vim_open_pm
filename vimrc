@@ -112,7 +112,9 @@ set textwidth=178
 "===============
 "Mappings
 "===============
-:nmap <C-c><C-c> :!perl -Wc %<CR>
+":nmap <C-c><C-c> :!perl -Wc %<CR>
+:nmap <C-c><C-c> :!php -l %<CR>
+:nmap <C-b><C-b> :%!/home/gangbo/www/node_modules/uglify-js/bin/uglifyjs -b -i 4<CR>
 
 syntax match Trail " +$"
 highlight def link Trail Todo
