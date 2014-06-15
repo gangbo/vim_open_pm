@@ -114,8 +114,6 @@ set textwidth=178
 "===============
 ":nmap <C-c><C-c> :!perl -Wc %<CR>
 :nmap <C-c><C-c> :!php -l %<CR>
-":nmap <C-b><C-b> :%!/home/gangbo/www/node_modules/uglify-js/bin/uglifyjs -b -i 4<CR>
-":nmap <C-b><C-b> :%!php ~/pear/bin/php_beautifier -l "Pear('newline_class'=>false,'newline_function'=>false) ArrayNested()" <CR>
 
 syntax match Trail " +$"
 highlight def link Trail Todo
