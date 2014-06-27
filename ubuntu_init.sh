@@ -1,5 +1,5 @@
 #/usr/bin/env sh
-sudo apt-get install gcc git wget tree vim curl zsh -y
+sudo apt-get install gcc git wget tree vim curl zsh zip -y
 alias vi=vim
 mkdir -p ~/.vim/bundle
 mkdir -p ~/mygit/
