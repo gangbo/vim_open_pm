@@ -1,5 +1,5 @@
 #/usr/bin/env sh
-sudo apt-get install gcc git wget tree vim curl zsh zip -y
+sudo apt-get install gcc git wget tree vim curl zsh zip tmux -y
 alias vi=vim
 mkdir -p ~/.vim/bundle
 mkdir -p ~/mygit/
@@ -11,3 +11,4 @@ cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 
 
 chsh -s /bin/zsh
+
