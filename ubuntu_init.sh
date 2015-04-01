@@ -1,4 +1,6 @@
 #/usr/bin/env sh
+sudo apt-get update
+sudo apt-get upgrade -y
 sudo apt-get install gcc git wget tree vim curl zsh zip tmux -y
 alias vi=vim
 mkdir -p ~/.vim/bundle
