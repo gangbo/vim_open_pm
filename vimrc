@@ -43,6 +43,9 @@ Plugin 'gangbo/vim_open_pm'
 "-- vim-scripts repos
 Plugin 'vim-startify'
 
+"Plugin 'powerline/powerline'
+Plugin 'Lokaltog/vim-powerline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -74,8 +77,8 @@ set nobackup
 set cursorline
 set wrap
 set laststatus=2 "底部显示两行
-set statusline=\ [File]\ %F%m%r%h\ %w\ \ %h\ \%=[Line]\ %l,%c\ %=\ %P "显示行号
-set statusline+=\ [%{&fileformat}] " file format
+"set statusline=\ [File]\ %F%m%r%h\ %w\ \ %h\ \%=[Line]\ %l,%c\ %=\ %P "显示行号
+"set statusline+=\ [%{&fileformat}] " file format
 set showcmd
 set hlsearch "search 高亮
 set incsearch
