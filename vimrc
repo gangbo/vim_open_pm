@@ -1,58 +1,64 @@
-set nocompatible               " Be iMproved
+"---------------
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-call neobundle#begin(expand('~/.vim/bundle/'))
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
- " Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gangbo/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+" Plugin 'user/L9', {'name': 'newL9'}
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
+Plugin 'scrooloose/nerdtree'
 
-call neobundle#end()
-
-
-
-"-- Recommended to install
-"-- After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'jistr/vim-nerdtree-tabs.git'
+Plugin 'jistr/vim-nerdtree-tabs.git'
 
 "color scheme
-NeoBundle 'nightire/vim-colors'
+Plugin 'nightire/vim-colors'
 colorscheme darkblue
 
 "--My Bundles here:
 "--
 "-- Note: You don't set neobundle setting in .gvimrc!
 "-- Original repos on github
-NeoBundle 'gangbo/vim_open_pm'
+Plugin 'gangbo/vim_open_pm'
 "-- vim-scripts repos
-NeoBundle 'L9'
-NeoBundle 'vim-startify'
-"-- Non github repos
-"NeoBundle 'git://git.wincent.com/command-t.git'
-"-- gist repos
-"-- Non git repos
-" NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+Plugin 'vim-startify'
 
-" ...
-
-filetype plugin indent on     " Required!
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
 "
 " Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
-" Installation check.
-NeoBundleCheck
+
 
 "---------
 filetype indent on
