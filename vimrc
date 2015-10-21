@@ -31,6 +31,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'jistr/vim-nerdtree-tabs.git'
 
+
 "color scheme
 Plugin 'nightire/vim-colors'
 colorscheme darkblue
@@ -45,6 +46,9 @@ Plugin 'vim-startify'
 
 "Plugin 'powerline/powerline'
 Plugin 'Lokaltog/vim-powerline'
+
+" for golang
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
