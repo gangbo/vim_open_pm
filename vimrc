@@ -12,6 +12,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+"color scheme
+Plugin 'flazz/vim-colorschemes'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -33,9 +36,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs.git'
 
 
-"color scheme
-Plugin 'nightire/vim-colors'
-colorscheme darkblue
 
 "--My Bundles here:
 "--
@@ -45,15 +45,21 @@ Plugin 'gangbo/vim_open_pm'
 "-- vim-scripts repos
 Plugin 'vim-startify'
 
+"for golang
+Plugin 'fatih/vim-go'
+let g:go_version_warning = 0
+
 "Plugin 'powerline/powerline'
 Plugin 'Lokaltog/vim-powerline'
 
-" for golang
-Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
+
+colorscheme molokai
+
+
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -141,3 +147,4 @@ set textwidth=178
 
 syntax match Trail " +$"
 highlight def link Trail Todo
+
